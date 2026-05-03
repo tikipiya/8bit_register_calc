@@ -5,10 +5,10 @@
 typedef struct {
     uint8_t regA; // 8bit register A
     uint8_t regB; // 8bit register B
-    uint8_t regC; // Carry flag
+    uint8_t flagC; // Carry flag
 } CPU;
 
-void display_cpu_state(CPU, cpu);
+void display_cpu_state(CPU cpu);
 void print_binary(uint8_t n);
 int main() {
     CPU myCpu = {0, 0, 0}; // cpuの初期化
